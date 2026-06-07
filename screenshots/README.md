@@ -1,10 +1,12 @@
 # Screenshots
 
-Add screenshots here before publishing:
+## Current Screenshot
+
+- `live-service.png` - captured from the running local starter service after successful health and version checks.
+
+## Future Screenshots To Add
 
 - `dashboard.png`
 - `mobile-view.png`
 - `api-docs.png`
 - `deployment.png`
-
-Use meaningful filenames and reference them from the main README.

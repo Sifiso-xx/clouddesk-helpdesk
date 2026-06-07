@@ -112,12 +112,9 @@ npm run dev
 
 ## Screenshots
 
-Add screenshots to the `screenshots/` folder:
+![Live service screenshot](screenshots/live-service.png)
 
-- Dashboard or landing screen
-- API documentation
-- Test output
-- Deployment page
+The screenshot above was captured from the running local starter service after successful health and version checks.
 
 ## Demo Credentials
 
