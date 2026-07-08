@@ -1,5 +1,9 @@
 # CloudDesk Helpdesk
 
+## Graduate Programme Fit
+
+This capstone is built to show broader software engineering judgement beyond coursework: workflow modelling, role-based access, ticket state, comments, attachment architecture, analytics, testing, Docker, CI/CD, and Terraform deployment planning. It is designed like a small real client system rather than a one-screen demo.
+
 ## Level
 
 Capstone project
@@ -136,7 +140,7 @@ I started CloudDesk Helpdesk as my capstone portfolio project: a cloud-ready tic
 
 ## Portfolio Description
 
-A cloud-native helpdesk capstone showing full-stack engineering, backend workflows, database modelling, DevOps automation, security, and cloud deployment readiness.
+A cloud-ready helpdesk capstone showing full-stack engineering, backend workflows, RBAC, database modelling, testing, DevOps automation, security, and cloud deployment readiness.
 
 ## Commit Plan
 
