@@ -1,8 +1,25 @@
 # CloudDesk Helpdesk
 
+![Status](https://img.shields.io/badge/status-capstone%20MVP-brightgreen)
+![CI](https://github.com/Sifiso-xx/clouddesk-helpdesk/actions/workflows/ci.yml/badge.svg)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![Node.js](https://img.shields.io/badge/node.js-18%2B-339933)
+![Focus](https://img.shields.io/badge/focus-full%20stack%20workflow-blue)
+
 ## Graduate Programme Fit
 
 This capstone is built to show broader software engineering judgement beyond coursework: workflow modelling, role-based access, ticket state, comments, attachment architecture, analytics, testing, Docker, CI/CD, and Terraform deployment planning. It is designed like a small real client system rather than a one-screen demo.
+
+## How To Review This Project
+
+1. Run `npm test` to check ticket workflow and analytics rules.
+2. Read `src/ticketWorkflow.js` for status, priority, ownership, and SLA-style logic.
+3. Review `docs/API.md` for the planned helpdesk endpoints.
+4. Review `docs/ARCHITECTURE.md` and `docs/TESTING.md` for design and test decisions.
+
+## Status
+
+Capstone MVP. The current version focuses on workflow modelling, backend rules, documentation, and deployment planning, with the frontend and cloud rollout documented as next steps.
 
 ## Level
 
@@ -63,6 +80,7 @@ flowchart LR
 |   |-- ARCHITECTURE.md
 |   |-- DEPLOYMENT.md
 |   |-- SECURITY.md
+|   |-- TESTING.md
 |-- screenshots/
 |-- src/
 |-- test/
@@ -100,6 +118,10 @@ GitHub Actions runs lint, type checks, tests, build, Docker build, and Terraform
 ## Testing Strategy
 
 Unit test status transition rules, API validation, RBAC guards, and analytics calculations. Add Playwright tests for ticket creation and admin triage.
+
+## Test Snapshot
+
+Current local result: `4` passing tests covering project metadata, ticket status transitions, urgent ticket priority, and role/ownership visibility.
 
 ## Security Considerations
 

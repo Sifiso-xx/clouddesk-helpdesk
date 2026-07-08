@@ -18,15 +18,23 @@ C4Context
 
 ## Main Components
 
-- UI or API layer
-- Application service layer
-- Data access layer
-- Database or cloud data store
-- CI/CD pipeline
-- Deployment and monitoring
+- Web/API layer for ticket creation, triage, comments, attachments, and admin analytics.
+- Ticket workflow module for status transitions, priority rules, ownership visibility, and analytics.
+- PostgreSQL data model for users, tickets, comments, attachments, notifications, and audit logs.
+- Object storage model for attachments using S3, Azure Blob, or GCS.
+- Docker and GitHub Actions plan for repeatable build, test, and release checks.
+- Terraform plan for cloud resources and environment-specific deployment.
 
 ## Engineering Tradeoffs
 
-- Keep the first version small enough to finish.
-- Document future production improvements separately.
-- Prefer boring, understandable architecture over unnecessary complexity.
+- Model ticket workflow rules before adding UI polish so the core business process stays clear.
+- Keep attachments as storage references instead of database blobs.
+- Include audit logs early because support systems often need accountability.
+- Keep cloud deployment documented even while the MVP remains locally runnable.
+
+## Next Production Improvements
+
+- Add persistent PostgreSQL migrations and seed data.
+- Add Playwright tests for ticket creation, assignment, and admin triage.
+- Add notification delivery through email or queue-backed workers.
+- Add monitoring for ticket backlog, SLA risk, and attachment failures.
